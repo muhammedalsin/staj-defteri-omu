@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  #yapilacaklarUygulamasi {
+    width: 300px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+li.tamamlandi {
+    text-decoration: line-through;
+    color: gray;
+}
+
+</style>
+</head>
+<body>
+
+  <div id="yapilacaklarUygulamasi">
+    <h2>Yapılacaklar Listesi</h2>
+    <input type="text" id="yeniGorev" placeholder="Yeni görev girin...">
+    <button onclick="gorevEkle()">Ekle</button>
+    <ul id="gorevListesi"></ul>
+</div>
+
+  
+  <script src="./script.js">
+    
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <form id="form">
+    <label for="isim">İsim:</label>
+    <input type="text" id="isim" name="isim">
+    <button type="submit">Gönder</button>
+  </form>
+  <p id="sonuc"></p>
+  
+  <script >
+      document.getElementById("form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Formun sayfayı yeniden yüklemesini engeller
+        let isim = document.getElementById("isim").value;
+        document.getElementById("sonuc").textContent = "Girilen İsim: " + isim;
+      });
+  </script>
+</body>
+</html>

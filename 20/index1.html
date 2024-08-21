@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <input type="text" id="veri" placeholder="Bir şeyler yazın">
+  <button onclick="veriKaydet()">Veriyi Kaydet</button>
+  <button onclick="veriyiGoster()">Veriyi Göster</button>
+  <p id="gosterim"></p>
+  
+  <script >
+    function veriKaydet() {
+      let veri = document.getElementById("veri").value;
+      localStorage.setItem("myData", veri);
+    }
+
+  </script>
+</body>
+</html>
